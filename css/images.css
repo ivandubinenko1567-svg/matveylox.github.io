@@ -1,0 +1,57 @@
+body {
+  background: #0e8c85 url("../assets/images/fix-bg.jpg") center top / cover no-repeat fixed;
+}
+
+.post-card {
+  background: url("../assets/images/post-bottom.jpg") left bottom no-repeat;
+}
+
+.post-card__header {
+  background: url("../assets/images/post-h.png") left top / 100% auto no-repeat;
+}
+
+.post-card__meta {
+  background: url("../assets/images/post-meta.png") left top / 100% 100% no-repeat;
+}
+
+.post-card__content,
+.post-card__footer {
+  background: url("../assets/images/entry-bg.jpg") left top / 100% auto repeat-y;
+}
+
+.comments-link {
+  background: url("../assets/images/comment.gif") center / 100% 100% no-repeat;
+}
+
+.about-card {
+  background:
+    url("../assets/images/about-top.png") top center / 100% auto no-repeat,
+    url("../assets/images/about-bottom.png") bottom center / 100% auto no-repeat,
+    url("../assets/images/about-body.png") center top / 100% auto repeat-y;
+}
+
+.widget {
+  background:
+    url("../assets/images/sidebar-bottom.png") bottom center / 100% auto no-repeat,
+    url("../assets/images/sidebar-bg.gif") center top / 100% auto repeat-y;
+}
+
+.widget > h2 {
+  background: url("../assets/images/sidebar-h.png") top center / 100% auto no-repeat;
+}
+
+.search-shell {
+  background: url("../assets/images/searchform.gif") center / 100% 100% no-repeat;
+}
+
+.site-credit {
+  background: url("../assets/images/credit-bg.png") center / 100% 100% no-repeat;
+}
+
+.taskbar {
+  background: url("../assets/images/taskbar-bg.jpg") left bottom repeat-x;
+}
+
+.taskbar-icon {
+  background: url("../assets/images/credit-icon.jpg") center / contain no-repeat;
+}

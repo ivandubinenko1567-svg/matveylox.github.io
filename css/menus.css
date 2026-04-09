@@ -1,0 +1,164 @@
+.nav-list,
+.widget-list,
+.taskbar-list {
+  list-style: none;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-item {
+  float: left;
+  margin-right: 1rem;
+}
+
+.nav-item a {
+  display: block;
+  text-align: center;
+  color: #f5f7f8;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.nav-label {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.94rem;
+}
+
+.nav-icon {
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav-item--home .nav-icon {
+  width: 3.5625rem;
+  height: 4.4375rem;
+  background-image: url("../assets/images/nav-home.png");
+}
+
+.nav-item--home a:hover .nav-icon,
+.nav-item--home a:focus-visible .nav-icon {
+  background-image: url("../assets/images/nav-home.gif");
+}
+
+.nav-item--about .nav-icon {
+  width: 5.0625rem;
+  height: 4.375rem;
+  background-image: url("../assets/images/nav-about.png");
+}
+
+.nav-item--about a:hover .nav-icon,
+.nav-item--about a:focus-visible .nav-icon {
+  background-image: url("../assets/images/nav-about.gif");
+}
+
+.nav-item--contact .nav-icon {
+  width: 4rem;
+  height: 3.8125rem;
+  background-image: url("../assets/images/nav-contact.png");
+}
+
+.nav-item--contact a:hover .nav-icon,
+.nav-item--contact a:focus-visible .nav-icon {
+  background-image: url("../assets/images/nav-contact.gif");
+}
+
+.nav-item--faq .nav-icon {
+  width: 4.0625rem;
+  height: 4.1875rem;
+  background-image: url("../assets/images/nav-faq.png");
+}
+
+.nav-item--faq a:hover .nav-icon,
+.nav-item--faq a:focus-visible .nav-icon {
+  background-image: url("../assets/images/nav-faq.gif");
+}
+
+.widget-list {
+  margin: 0;
+}
+
+.widget-list li {
+  margin: 0;
+  padding: 0.16rem 0 0.16rem 0.8rem;
+  background: url("../assets/images/sidebar-li.gif") left 0.57rem no-repeat;
+}
+
+.widget-list li + li {
+  margin-top: 0.2rem;
+}
+
+.taskbar-list {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.18rem;
+  margin: 0;
+  padding: 0;
+}
+
+.taskbar-item {
+  margin: 0;
+}
+
+.taskbar-item a {
+  display: block;
+  min-width: 8.9375rem;
+  height: 2.125rem;
+  line-height: 2.125rem;
+  padding: 0 1rem;
+  background: url("../assets/images/taskbar-li.jpg") left top / 100% 100% no-repeat;
+}
+
+.taskbar-item--primary a {
+  position: relative;
+  width: 7.8rem;
+  min-width: 7.8rem;
+  padding-left: 3.25rem;
+  padding-right: 0.8rem;
+}
+
+.taskbar-item--primary a::before {
+  content: "";
+  position: absolute;
+  left: -0.05rem;
+  bottom: -0.06rem;
+  width: 3.75rem;
+  height: 2.6875rem;
+  background: url("../assets/images/rss.png") left top / 7.5rem 2.6875rem no-repeat;
+}
+
+.taskbar-item--primary a:hover::before,
+.taskbar-item--primary a:focus-visible::before {
+  background-position: right top;
+}
+
+@media (max-width: 960px) {
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .nav-item {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .taskbar-list {
+    min-width: 18rem;
+  }
+}

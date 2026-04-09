@@ -1,0 +1,158 @@
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #253849;
+}
+
+a {
+  color: #4b79a3;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.branding {
+  text-align: center;
+  color: #ffffff;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 4vw, 3.35rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.branding p {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.post-card__header h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #445a73;
+}
+
+.post-card__meta {
+  font-size: 0.67rem;
+  color: #607587;
+  text-align: right;
+}
+
+.post-card__content p {
+  margin: 0;
+  font-size: 0.89rem;
+  color: #63768a;
+}
+
+.comments-link {
+  display: inline-block;
+  min-width: 10rem;
+  text-align: center;
+  font-size: 0.73rem;
+  line-height: 1.5rem;
+  color: #6490b9;
+}
+
+.about-card h2,
+.widget > h2 {
+  font-size: 0.84rem;
+  line-height: 1.2;
+}
+
+.about-card h2 {
+  margin: 0 0 0.55rem;
+  text-align: center;
+  color: #1c2328;
+}
+
+.about-card p {
+  margin: 0;
+  text-align: center;
+  color: #333333;
+}
+
+.widget > h2 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.65);
+}
+
+.search-shell input {
+  font: inherit;
+  color: #344a5b;
+}
+
+.widget-list {
+  font-size: 0.82rem;
+}
+
+.widget-list li {
+  color: #a8b6c1;
+}
+
+.widget-list a {
+  color: #bcc7cf;
+}
+
+.widget-list a:hover,
+.widget-list a:focus-visible {
+  color: #ffffff;
+}
+
+.site-credit p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+.footer-meta {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #4d6122;
+}
+
+.taskbar-item a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ebebeb;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.taskbar-item a:hover,
+.taskbar-item a:focus-visible {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.taskbar-system time {
+  font-size: 0.77rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 0.82rem;
+  }
+
+  .branding {
+    text-align: left;
+  }
+
+  .footer-meta {
+    font-size: 0.66rem;
+  }
+}

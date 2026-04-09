@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="tp.ru, WordPress, HTML5, CSS3, лабораторная работа, вёрстка">
+  <meta name="author" content="Ваше имя">
+  <meta name="description" content="Первая страница учебного сайта, сверстанная по макету в стиле WordPress и Windows Vista.">
+  <title>tp.ru | Ещё один сайт на WordPress</title>
+  <link rel="stylesheet" href="css/structure.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/images.css">
+  <link rel="stylesheet" href="css/menus.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Основное меню">
+        <ul class="nav-list">
+          <li class="nav-item nav-item--home">
+            <a href="#home" aria-current="page">
+              <span class="nav-icon" aria-hidden="true"></span>
+              <span class="nav-label">Главная</span>
+            </a>
+          </li>
+          <li class="nav-item nav-item--about">
+            <a href="#about">
+              <span class="nav-icon" aria-hidden="true"></span>
+              <span class="nav-label">Об авторе</span>
+            </a>
+          </li>
+          <li class="nav-item nav-item--contact">
+            <a href="#contact">
+              <span class="nav-icon" aria-hidden="true"></span>
+              <span class="nav-label">Контакт</span>
+            </a>
+          </li>
+          <li class="nav-item nav-item--faq">
+            <a href="#faq">
+              <span class="nav-icon" aria-hidden="true"></span>
+              <span class="nav-label">FAQ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="branding" aria-label="Информация о сайте">
+        <h1>tp.ru</h1>
+        <p>Ещё один сайт на WordPress</p>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="content-column" id="home">
+        <article class="post-card">
+          <header class="post-card__header">
+            <h2>Привет, мир!</h2>
+          </header>
+
+          <p class="post-card__meta">
+            Категория:
+            <a href="#rubric">Без рубрики</a>
+            |
+            <time datetime="2013-02-24">24 февраля 2013</time>
+          </p>
+
+          <div class="post-card__content">
+            <p>Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!</p>
+          </div>
+
+          <footer class="post-card__footer">
+            <a class="comments-link" href="#comments">Комментарии (1)</a>
+          </footer>
+        </article>
+      </section>
+
+      <aside class="sidebar">
+        <section class="about-card" id="about">
+          <h2>Об авторе</h2>
+          <p>Несколько слов об авторе.</p>
+        </section>
+
+        <section class="widget widget--search" id="contact">
+          <h2>Поиск</h2>
+          <form class="search-form" action="#" method="get">
+            <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+            <div class="search-shell">
+              <input id="search-input" name="q" type="search">
+            </div>
+          </form>
+        </section>
+
+        <section class="widget">
+          <h2>Свежие записи</h2>
+          <ul class="widget-list">
+            <li><a href="#home">Привет, мир!</a></li>
+          </ul>
+        </section>
+
+        <section class="widget">
+          <h2>Свежие комментарии</h2>
+          <ul class="widget-list">
+            <li><a href="#comments">Мистер WordPress к записи Привет, мир!</a></li>
+          </ul>
+        </section>
+
+        <section class="widget">
+          <h2>Архивы</h2>
+          <ul class="widget-list">
+            <li><a href="#archives">Февраль 2013</a></li>
+          </ul>
+        </section>
+
+        <section class="widget" id="faq">
+          <h2>Рубрики</h2>
+          <ul class="widget-list">
+            <li id="rubric"><a href="#home">Без рубрики</a></li>
+          </ul>
+        </section>
+
+        <section class="widget">
+          <h2>Мета</h2>
+          <ul class="widget-list">
+            <li><a href="#">Управление сайтом</a></li>
+            <li><a href="#">Выйти</a></li>
+            <li><a href="#">RSS записей</a></li>
+            <li><a href="#">RSS комментариев</a></li>
+            <li><a href="https://wordpress.org" target="_blank" rel="noopener noreferrer">WordPress.org</a></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-credit">
+        <p>Все права защищены tp.ru</p>
+      </div>
+
+      <p class="footer-meta">
+        Локализация: xTemplate.ru: шаблоны сайтов WordPress. • SeOne.ru: поисковое продвижение сайтов, поддержка сайта
+      </p>
+
+      <div class="taskbar">
+        <nav class="taskbar-nav" aria-label="Нижнее меню">
+          <ul class="taskbar-list">
+            <li class="taskbar-item taskbar-item--primary"><a href="#home">Главная</a></li>
+            <li class="taskbar-item"><a href="#home">Пример страницы</a></li>
+          </ul>
+        </nav>
+
+        <div class="taskbar-system">
+          <span class="taskbar-icon" aria-hidden="true"></span>
+          <time datetime="14:20">14:20</time>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

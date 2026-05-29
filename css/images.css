@@ -23,6 +23,33 @@ body {
   background: url("../assets/images/comment.gif") center / 100% 100% no-repeat;
 }
 
+.tag {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.tag--python {
+  background: linear-gradient(#5492b8, #2f678f);
+}
+
+.tag--js {
+  background: linear-gradient(#d7a74a, #ad7928);
+}
+
+.tag--cpp {
+  background: linear-gradient(#6269b5, #38418f);
+}
+
+.tag--html {
+  background: linear-gradient(#bf6647, #8f3c25);
+}
+
+.tag--css {
+  background: linear-gradient(#4d996f, #2d714a);
+}
+
 .about-card {
   background:
     url("../assets/images/about-top.png") top center / 100% auto no-repeat,
@@ -54,4 +81,101 @@ body {
 
 .taskbar-icon {
   background: url("../assets/images/credit-icon.jpg") center / contain no-repeat;
+}
+
+.python-nav__list a {
+  background:
+    linear-gradient(#ffffff, #eeeeee);
+  border: 1px solid #8e999a;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.python-nav__list li + li a {
+  border-left: 0;
+}
+
+.python-panel {
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid #a9bdc0;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
+.python-panel h2 {
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  box-shadow:
+    0 4px 0 rgba(32, 89, 100, 0.38),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+.python-feature {
+  background: linear-gradient(#f9f9f9, #ffffff);
+  border: 1px solid #cfcfcf;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.18),
+    inset 0 1.95rem 0 rgba(225, 225, 225, 0.85);
+}
+
+.python-feature__badge {
+  border: 3px solid #efefef;
+  box-shadow:
+    0 0 0 1px #b5b5b5,
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.badge--blue {
+  background: linear-gradient(135deg, #43a9d4, #3159a2);
+}
+
+.badge--orange {
+  background: linear-gradient(135deg, #df8250, #a43e28);
+}
+
+.badge--violet {
+  background: linear-gradient(135deg, #737ed6, #35439c);
+}
+
+.badge--green {
+  background: linear-gradient(135deg, #55b979, #23754b);
+}
+
+.badge--gold {
+  background: linear-gradient(135deg, #e0b94b, #ae791f);
+}
+
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+    background-position: 31% top;
+  }
+
+  .post-card {
+    background-size: 100% auto;
+  }
+
+  .post-card__header {
+    background-size: 100% 100%;
+  }
+
+  .about-card,
+  .widget,
+  .widget > h2 {
+    background-size: 100% auto;
+  }
+
+  .site-credit {
+    background-size: 100% 100%;
+  }
+
+  .python-nav__list li:nth-child(odd) a {
+    border-left: 1px solid #8e999a;
+  }
+
+  .python-nav__list li:nth-child(n + 3) a {
+    border-top: 0;
+  }
 }

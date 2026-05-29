@@ -7,6 +7,7 @@
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,6 +80,27 @@ body {
 .post-card__content {
   min-height: 7.7rem;
   padding: 0.9rem 1rem 1rem;
+}
+
+.post-card__content p + p {
+  margin-top: 0.75rem;
+}
+
+.language-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.4rem;
+  height: 1.65rem;
+  padding: 0 0.75rem;
+  border-radius: 0.35rem;
 }
 
 .post-card__footer {
@@ -177,6 +199,77 @@ body {
   height: 2.125rem;
 }
 
+.python-page .page-shell {
+  padding-top: 1.5rem;
+}
+
+.python-header {
+  display: grid;
+  grid-template-columns: 1fr 17rem;
+  align-items: start;
+  gap: 1.4rem;
+}
+
+.python-header::after {
+  content: none;
+}
+
+.python-header .branding {
+  float: none;
+  width: auto;
+  margin-top: 0;
+}
+
+.python-main {
+  flex: 1;
+  width: min(88%, 55.4375rem);
+  margin: 2.65rem auto 0;
+}
+
+.python-panel {
+  width: 43.875rem;
+  max-width: 100%;
+  min-height: 21.35rem;
+  padding: 1.55rem 1.85rem 1.95rem;
+  margin-left: 0.2rem;
+}
+
+.python-panel h2 {
+  display: inline-flex;
+  align-items: center;
+  min-width: 25rem;
+  min-height: 2.45rem;
+  margin: 0 0 1.35rem;
+  padding: 0.25rem 2rem;
+}
+
+.python-feature {
+  display: grid;
+  grid-template-columns: 4.05rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  min-height: 4.25rem;
+  margin-bottom: 0.7rem;
+  padding: 0.55rem 1rem 0.55rem 0.95rem;
+}
+
+.python-feature__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.python-feature h3,
+.python-feature p {
+  margin: 0;
+}
+
+.python-feature p {
+  margin-top: 0.2rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -191,7 +284,8 @@ body {
 
 @media (max-width: 960px) {
   .site-header,
-  .page-main {
+  .page-main,
+  .python-main {
     width: min(92%, 55.4375rem);
   }
 
@@ -211,6 +305,22 @@ body {
     margin-top: 1rem;
   }
 
+  .python-header {
+    display: block;
+  }
+
+  .python-header .branding {
+    margin-top: 1.2rem;
+  }
+
+  .python-main {
+    margin-top: 1.2rem;
+  }
+
+  .python-panel {
+    margin-left: 0;
+  }
+
   .site-credit {
     width: min(86%, 25.0625rem);
     margin-right: auto;
@@ -223,13 +333,136 @@ body {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    min-width: 0;
+  }
+
   .page-shell {
+    min-height: 100svh;
+    padding-top: 0.75rem;
+  }
+
+  .site-header,
+  .page-main,
+  .python-main {
+    width: min(94vw, 28rem);
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .branding {
+    margin-top: 0.9rem;
+  }
+
+  .page-main {
+    margin-top: 0.75rem;
+  }
+
+  .post-card {
+    margin-top: 0.85rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .post-card__header {
+    min-height: 2.25rem;
+    padding: 0.5rem 0.85rem 0.25rem 2rem;
+  }
+
+  .post-card__meta {
+    padding: 0.25rem 0.8rem;
+  }
+
+  .post-card__content {
+    min-height: 0;
+    padding: 0.8rem;
+  }
+
+  .post-card__footer {
+    min-height: 2rem;
+    padding: 0 0.8rem 0.45rem;
+  }
+
+  .language-tags {
+    gap: 0.45rem;
+  }
+
+  .tag {
+    min-width: 3.6rem;
+    height: 1.55rem;
+    padding: 0 0.55rem;
+  }
+
+  .about-card {
+    padding: 1rem 1rem 1.2rem;
+  }
+
+  .widget {
+    margin-bottom: 0.65rem;
+  }
+
+  .widget > h2 {
+    min-height: 2rem;
+    padding: 0.45rem 0.8rem 0.1rem 1rem;
+  }
+
+  .widget-list {
+    padding: 0.45rem 0.8rem 0.2rem 1rem;
+  }
+
+  .search-form {
+    padding: 0.5rem 0.7rem 0;
+  }
+
+  .site-footer {
     padding-top: 1rem;
+  }
+
+  .site-credit {
+    width: min(94vw, 25.0625rem);
+    min-height: 3.7rem;
+    padding: 0.95rem 1.05rem 0.45rem;
+  }
+
+  .footer-meta {
+    width: 94vw;
+    margin-bottom: 0.35rem;
+    padding: 0 0.4rem;
+  }
+
+  .python-panel {
+    width: 100%;
+    min-height: 0;
+    padding: 0.85rem;
+  }
+
+  .python-panel h2 {
+    display: flex;
+    min-width: 0;
+    width: 100%;
+    padding: 0.25rem 0.85rem;
+  }
+
+  .python-feature {
+    grid-template-columns: 3.5rem 1fr;
+    gap: 0.75rem;
+    min-height: 0;
+    margin-bottom: 0.65rem;
+    padding: 0.65rem 0.7rem;
+  }
+
+  .python-feature__badge {
+    width: 3rem;
+    height: 3rem;
   }
 
   .taskbar {
     flex-direction: column;
     align-items: stretch;
+    min-height: 0;
   }
 
   .taskbar-nav {
@@ -238,6 +471,40 @@ body {
 
   .taskbar-system {
     justify-content: flex-end;
-    padding-top: 0.4rem;
+    min-height: 1.65rem;
+    padding-top: 0.15rem;
+    padding-right: 0.45rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-header,
+  .page-main,
+  .python-main {
+    width: calc(100vw - 1rem);
+  }
+
+  .post-card__header {
+    padding-left: 1.8rem;
+  }
+
+  .post-card__footer {
+    text-align: center;
+  }
+
+  .python-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .python-feature__badge {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 360px) {
+  .site-header,
+  .page-main,
+  .python-main {
+    width: calc(100vw - 0.75rem);
   }
 }

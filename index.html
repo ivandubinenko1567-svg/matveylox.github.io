@@ -3,84 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="tp.ru, WordPress, HTML5, CSS3, лабораторная работа, вёрстка">
-  <meta name="author" content="Ваше имя">
-  <meta name="description" content="Первая страница учебного сайта, сверстанная по макету в стиле WordPress и Windows Vista.">
-  <title>tp.ru | Ещё один сайт на WordPress</title>
+  <meta name="keywords" content="CodeLab, языки программирования, Python, HTML, CSS, JavaScript">
+  <meta name="author" content="CodeLab">
+  <meta name="description" content="Короткий учебный сайт о популярных языках программирования.">
+  <title>CodeLab | Языки программирования</title>
   <link rel="stylesheet" href="css/structure.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/images.css">
   <link rel="stylesheet" href="css/menus.css">
 </head>
-<body>
+<body class="home-page">
   <div class="page-shell">
     <header class="site-header">
       <nav class="main-nav" aria-label="Основное меню">
         <ul class="nav-list">
           <li class="nav-item nav-item--home">
-            <a href="#home" aria-current="page">
+            <a href="index.html" aria-current="page">
               <span class="nav-icon" aria-hidden="true"></span>
               <span class="nav-label">Главная</span>
             </a>
           </li>
           <li class="nav-item nav-item--about">
-            <a href="#about">
+            <a href="example.html">
               <span class="nav-icon" aria-hidden="true"></span>
-              <span class="nav-label">Об авторе</span>
+              <span class="nav-label">Python</span>
             </a>
           </li>
           <li class="nav-item nav-item--contact">
-            <a href="#contact">
+            <a href="#languages">
               <span class="nav-icon" aria-hidden="true"></span>
-              <span class="nav-label">Контакт</span>
+              <span class="nav-label">Языки</span>
             </a>
           </li>
           <li class="nav-item nav-item--faq">
-            <a href="#faq">
+            <a href="#start">
               <span class="nav-icon" aria-hidden="true"></span>
-              <span class="nav-label">FAQ</span>
+              <span class="nav-label">Старт</span>
             </a>
           </li>
         </ul>
       </nav>
 
       <section class="branding" aria-label="Информация о сайте">
-        <h1>tp.ru</h1>
-        <p>Ещё один сайт на WordPress</p>
+        <h1>CodeLab</h1>
+        <p>Языки программирования<br>простыми словами</p>
       </section>
     </header>
 
     <main class="page-main">
-      <section class="content-column" id="home">
+      <section class="content-column">
         <article class="post-card">
           <header class="post-card__header">
-            <h2>Привет, мир!</h2>
+            <h2>Что такое язык программирования?</h2>
           </header>
 
           <p class="post-card__meta">
             Категория:
-            <a href="#rubric">Без рубрики</a>
+            <a href="#basics">Основы</a>
             |
-            <time datetime="2013-02-24">24 февраля 2013</time>
+            <time datetime="2026-05-26">26 мая 2026</time>
           </p>
 
           <div class="post-card__content">
-            <p>Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите её, затем пишите!</p>
+            <p>Язык программирования помогает человеку объяснить компьютеру, что нужно сделать. С его помощью создают сайты, игры, приложения, роботов, базы данных и даже искусственный интеллект.</p>
+            <p>Каждый язык похож на отдельный инструмент: Python удобен для обучения и анализа данных, JavaScript оживляет сайты, C++ помогает писать быстрые программы, а HTML и CSS отвечают за структуру и внешний вид веб-страниц.</p>
+            <div class="language-tags" id="languages">
+              <span class="tag tag--python">Python</span>
+              <span class="tag tag--js">JavaScript</span>
+              <span class="tag tag--cpp">C++</span>
+              <span class="tag tag--html">HTML</span>
+              <span class="tag tag--css">CSS</span>
+            </div>
           </div>
 
           <footer class="post-card__footer">
-            <a class="comments-link" href="#comments">Комментарии (1)</a>
+            <a class="comments-link" href="example.html">Открыть 2 страницу</a>
+          </footer>
+        </article>
+
+        <article class="post-card" id="start">
+          <header class="post-card__header">
+            <h2>С какого языка начать?</h2>
+          </header>
+
+          <p class="post-card__meta">
+            Раздел:
+            <a href="#start">Первый шаг</a>
+            |
+            <time datetime="2026-05-26">26 мая 2026</time>
+          </p>
+
+          <div class="post-card__content">
+            <p>Новичку лучше выбрать язык под цель. Для сайтов подойдут HTML, CSS и JavaScript. Для первых программ, задач и автоматизации часто выбирают Python. Для игр и системных программ пригодятся C# или C++.</p>
+            <p>Главное не пытаться выучить все сразу. Достаточно взять один язык, понять переменные, условия, циклы и функции, а затем сделать маленький проект.</p>
+          </div>
+
+          <footer class="post-card__footer">
+            <a class="comments-link" href="#languages">Список языков</a>
           </footer>
         </article>
       </section>
 
       <aside class="sidebar">
-        <section class="about-card" id="about">
-          <h2>Об авторе</h2>
-          <p>Несколько слов об авторе.</p>
+        <section class="about-card" id="basics">
+          <h2>О сайте</h2>
+          <p>Короткий учебный сайт о популярных языках программирования и том, где они применяются.</p>
         </section>
 
-        <section class="widget widget--search" id="contact">
+        <section class="widget widget--search">
           <h2>Поиск</h2>
           <form class="search-form" action="#" method="get">
             <label class="visually-hidden" for="search-input">Поиск по сайту</label>
@@ -91,41 +121,40 @@
         </section>
 
         <section class="widget">
-          <h2>Свежие записи</h2>
+          <h2>Популярные языки</h2>
           <ul class="widget-list">
-            <li><a href="#home">Привет, мир!</a></li>
+            <li><a href="example.html">Python</a></li>
+            <li><a href="#languages">JavaScript</a></li>
+            <li><a href="#languages">C++</a></li>
+            <li><a href="#languages">HTML и CSS</a></li>
           </ul>
         </section>
 
         <section class="widget">
-          <h2>Свежие комментарии</h2>
+          <h2>Где применяются</h2>
           <ul class="widget-list">
-            <li><a href="#comments">Мистер WordPress к записи Привет, мир!</a></li>
+            <li><a href="#languages">Веб-сайты</a></li>
+            <li><a href="#languages">Игры</a></li>
+            <li><a href="#languages">Мобильные приложения</a></li>
+            <li><a href="#languages">Анализ данных</a></li>
           </ul>
         </section>
 
         <section class="widget">
-          <h2>Архивы</h2>
+          <h2>Мини-словарь</h2>
           <ul class="widget-list">
-            <li><a href="#archives">Февраль 2013</a></li>
-          </ul>
-        </section>
-
-        <section class="widget" id="faq">
-          <h2>Рубрики</h2>
-          <ul class="widget-list">
-            <li id="rubric"><a href="#home">Без рубрики</a></li>
+            <li><a href="#start">Переменная</a></li>
+            <li><a href="#start">Условие</a></li>
+            <li><a href="#start">Цикл</a></li>
+            <li><a href="#start">Функция</a></li>
           </ul>
         </section>
 
         <section class="widget">
-          <h2>Мета</h2>
+          <h2>Навигация</h2>
           <ul class="widget-list">
-            <li><a href="#">Управление сайтом</a></li>
-            <li><a href="#">Выйти</a></li>
-            <li><a href="#">RSS записей</a></li>
-            <li><a href="#">RSS комментариев</a></li>
-            <li><a href="https://wordpress.org" target="_blank" rel="noopener noreferrer">WordPress.org</a></li>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="example.html">Вторая страница</a></li>
           </ul>
         </section>
       </aside>
@@ -133,18 +162,18 @@
 
     <footer class="site-footer">
       <div class="site-credit">
-        <p>Все права защищены tp.ru</p>
+        <p>CodeLab: учебный сайт о программировании</p>
       </div>
 
       <p class="footer-meta">
-        Локализация: xTemplate.ru: шаблоны сайтов WordPress. • SeOne.ru: поисковое продвижение сайтов, поддержка сайта
+        HTML помогает со структурой, CSS за оформление, JavaScript за интерактивность, а Python помогает быстро начать.
       </p>
 
       <div class="taskbar">
         <nav class="taskbar-nav" aria-label="Нижнее меню">
           <ul class="taskbar-list">
-            <li class="taskbar-item taskbar-item--primary"><a href="#home">Главная</a></li>
-            <li class="taskbar-item"><a href="#home">Пример страницы</a></li>
+            <li class="taskbar-item taskbar-item--primary"><a href="index.html">Главная</a></li>
+            <li class="taskbar-item"><a href="example.html">Python как первый язык</a></li>
           </ul>
         </nav>
 

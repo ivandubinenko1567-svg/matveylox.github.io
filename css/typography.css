@@ -25,7 +25,7 @@ a:focus-visible {
   font-size: clamp(2.6rem, 4vw, 3.35rem);
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
 }
 
@@ -52,6 +52,17 @@ a:focus-visible {
   margin: 0;
   font-size: 0.89rem;
   color: #63768a;
+}
+
+.language-tags {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tag {
+  line-height: 1;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
 }
 
 .comments-link {
@@ -143,16 +154,110 @@ a:focus-visible {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
 
+.python-nav__list a {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.python-nav__list a:hover,
+.python-nav__list a:focus-visible {
+  color: #2d6380;
+  text-decoration: none;
+}
+
+.python-panel h2 {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #252525;
+  font-weight: 700;
+}
+
+.python-feature__badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.python-feature h3 {
+  font-size: 1rem;
+  line-height: 1.15;
+  color: #333333;
+}
+
+.python-feature p {
+  font-size: 0.74rem;
+  line-height: 1.35;
+  color: #676767;
+}
+
 @media (max-width: 640px) {
   body {
     font-size: 0.82rem;
+    line-height: 1.4;
   }
 
   .branding {
+    text-align: center;
+  }
+
+  .branding h1 {
+    font-size: 2.25rem;
+  }
+
+  .branding p {
+    font-size: 0.78rem;
+  }
+
+  .post-card__header h2 {
+    font-size: 0.9rem;
+  }
+
+  .post-card__meta {
+    font-size: 0.62rem;
     text-align: left;
+  }
+
+  .post-card__content p {
+    font-size: 0.82rem;
+  }
+
+  .comments-link {
+    min-width: min(10rem, 100%);
+    font-size: 0.7rem;
+  }
+
+  .python-nav__list a {
+    font-size: 0.72rem;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .python-panel h2 {
+    font-size: 0.9rem;
+  }
+
+  .python-feature h3 {
+    font-size: 0.92rem;
+  }
+
+  .python-feature p {
+    font-size: 0.72rem;
   }
 
   .footer-meta {
     font-size: 0.66rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-label {
+    font-size: 0.82rem;
+  }
+
+  .branding h1 {
+    font-size: 2rem;
   }
 }
